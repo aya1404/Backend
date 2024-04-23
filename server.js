@@ -5,6 +5,7 @@ const dotenv = require('dotenv').config()
 const contactController = require('./controllers/contactController')
 const cors = require('cors')
 
+app.use(cors())
 const app = express()
 app.use(express.json())
 
